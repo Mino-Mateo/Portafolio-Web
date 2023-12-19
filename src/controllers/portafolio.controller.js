@@ -6,9 +6,11 @@ const renderAllPortafolios = async (req, res) => {
 	const portfolios = await Portfolio.find({ user: req.user._id }).lean();
 	res.render("portafolio/allPortfolios", { portfolios });
 };
+
 const renderPortafolio = (req, res) => {
 	res.send("Mostrar el detalle de un portafolio");
 };
+
 const renderPortafolioForm = (req, res) => {
 	res.render("portafolio/newFormPortafolio");
 };

@@ -14,6 +14,8 @@ passport.use(
 			if (!userBDD) return done("Lo sentimos, el email no se encuentra registrado", false);
 			const passwordUser = await userBDD.matchPassword(password);
 			if (!passwordUser) return done("Lo sentimos, los passwords no coinciden", false);
+			if (userBDD.confirmEmail === false)
+				return done("Lo sentimos, debe verificar la cuenta en su correo electrónico", false);
 			return done(null, userBDD);
 		}
 	)
