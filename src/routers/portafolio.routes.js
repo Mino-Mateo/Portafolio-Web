@@ -1,6 +1,6 @@
 const { Router } = require("express");
-const { isAuthenticated } = require("../helpers/validate-auth");
 const router = Router();
+const { isAuthenticated } = require("../helpers/validate-auth");
 
 const {
 	renderAllPortafolios,

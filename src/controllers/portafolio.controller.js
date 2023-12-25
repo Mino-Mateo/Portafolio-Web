@@ -25,14 +25,9 @@ const createNewPortafolio = async (req, res) => {
 		public_id: imageUpload.public_id,
 		secure_url: imageUpload.secure_url,
 	};
-
-	try {
-		await fs.unlink(req.files.image.tempFilePath);
-		await newPortfolio.save();
-		res.redirect("/portafolios");
-	} catch (error) {
-		console.log(error);
-	}
+	await fs.unlink(req.files.image.tempFilePath);
+	await newPortfolio.save();
+	res.redirect("/portafolios");
 };
 
 const renderEditPortafolioForm = async (req, res) => {

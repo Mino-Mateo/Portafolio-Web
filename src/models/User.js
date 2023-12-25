@@ -28,6 +28,11 @@ const userSchema = new Schema(
 	}
 );
 
+// Método para crear un token
+userSchema.methods.crearToken = function () {
+	return (token = this.token = Math.random().toString(36).slice(2));
+};
+
 // Método para cifrar el password del usuario
 userSchema.methods.encrypPassword = async (password) => {
 	const salt = await bcrypt.genSalt(10);
@@ -39,11 +44,6 @@ userSchema.methods.encrypPassword = async (password) => {
 userSchema.methods.matchPassword = async function (password) {
 	const response = await bcrypt.compare(password, this.password);
 	return response;
-};
-
-// Método para crear un token
-userSchema.methods.crearToken = function () {
-	return (token = this.token = Math.random().toString(36).slice(2));
 };
 
 module.exports = model("user", userSchema);

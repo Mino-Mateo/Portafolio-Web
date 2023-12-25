@@ -15,6 +15,7 @@
 			<div class="col-lg-8 col-xl-7">
 
 				<form action="/portafolio/add" method="post" enctype="multipart/form-data">
+
 					<!-- Title input-->
 					<div class="form-floating mb-3">
 						<input
@@ -41,6 +42,19 @@
 						<label for="category">Category</label>
 					</div>
 
+					<!-- Image input-->
+					<div class="form-floating mb-3">
+						<input
+							class="form-control"
+							id="image"
+							type="file"
+							placeholder="Select your imagen..."
+							required
+							name="image"
+						/>
+						<label for="image">Image</label>
+					</div>
+
 					<!-- Description input-->
 					<div class="form-floating mb-3">
 						<textarea
@@ -55,22 +69,11 @@
 						<label for="description">Description</label>
 					</div>
 
-					<!-- Image input-->
-					<div class="form-floating mb-3">
-						<input
-							class="form-control"
-							id="image"
-							type="file"
-							placeholder="Select your imagen..."
-							required
-							name="image"
-						/>
-						<label for="image">Image</label>
-					</div>
-
 					<!-- Submit Button-->
 					<button class="btn btn-primary btn-xl" type="submit">Send</button>
+
 				</form>
+
 			</div>
 		</div>
 	</div>

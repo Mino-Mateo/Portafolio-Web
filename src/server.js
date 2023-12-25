@@ -1,5 +1,3 @@
-require("dotenv").config();
-
 const express = require("express");
 const path = require("path");
 const { engine } = require("express-handlebars");
@@ -15,6 +13,7 @@ require("./config/passport");
 // Configuraciones
 app.set("port", process.env.port || 3000);
 app.set("views", path.join(__dirname, "views"));
+app.set("views", path.join(__dirname, "views"));
 app.engine(
 	".hbs",
 	engine({
@@ -25,7 +24,6 @@ app.engine(
 	})
 );
 app.set("view engine", ".hbs");
-
 app.use(
 	fileUpload({
 		useTempFiles: true,
