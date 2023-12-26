@@ -1,8 +1,6 @@
 // importar mongoose
 const mongoose = require("mongoose");
 
-// cadena de conexion a la BDD
-
 //crear un metodo para hacer la cadena de concexion
 connection = async () => {
 	try {
