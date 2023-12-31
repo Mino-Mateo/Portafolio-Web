@@ -14,10 +14,10 @@ El proyecto cuenta con:
 
 
 
-![Logo](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbuttercms.com%2Fstatic%2Fimages%2Ftech_banners%2FExpressJS.png&f=1&nofb=1&ipt=070813f874146c0f8bab7eecb324d075f8d555ddc837c2ff9a88ef9e678ab42a&ipo=images)
+![Logo](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fblog.knoldus.com%2Fwp-content%2Fuploads%2F2021%2F12%2Fexprss.jpg&f=1&nofb=1&ipt=0b20c75fb6df10bcbfcd71741e36d89f740c3471545c1a6424daca0142f19c6f&ipo=images)
 
 
-## Instalacion
+## 💽Instalacion
 
 Para usar el proyecto con npm
 
@@ -26,13 +26,25 @@ Instalar express para usar el resto de librerias
 ```bash
   npm i express
 ```
+Para ejecutarlo el proyecto con npm
 
+```bash
+  npm run dev
+```
     
-## Extras
+## 👾Extras
 
 La web para poder visualizar el proyecto
 
 Motor de plantillas utilizado
 https://startbootstrap.com/theme/freelancer
 
+Las variables de entorno ".env" deben ser colocadas en la carpeta principal no en el "src"
 
+
+
+
+
+## 🔗 Links
+[![perfil](https://img.shields.io/badge/Perfil_GitHub-000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Mino-Mateo)
+[![Web](https://img.shields.io/badge/Portafolio_Servicios-0A66C2?style=for-the-badge&logo=ko-fi&logoColor=white)](https://mino-mateo.github.io/)
